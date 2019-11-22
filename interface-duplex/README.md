@@ -28,3 +28,9 @@ cacti_graph_template_interface-duplex.xml
 via cacti 
 
 Copy duplex.xml to /var/www/html/cacti/resource/snmp_queries
+
+
+TODO
+
+1, Test THOLD
+2, Test AUTOM8
