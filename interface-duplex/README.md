@@ -10,5 +10,7 @@ SNMP will report the following Values
 OID being polled
 
 .1.3.6.1.2.1.10.7.2.1.19 
+
 iso.3.6.1.2.1.10.7.2.1.19.3 = INTEGER: 3 
+
 iso.3.6.1.2.1.10.7.2.1.19.4 = INTEGER: 3 
