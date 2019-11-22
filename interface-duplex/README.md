@@ -34,3 +34,7 @@ TODO
 
 1, Test THOLD
 2, Test AUTOM8
+
+Known Bugs
+
+**************DOES NOT WORK ON CISCO IOS 12.1 OID NOT PRESENT**************
