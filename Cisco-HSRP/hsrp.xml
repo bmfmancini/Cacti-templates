@@ -1,0 +1,35 @@
+<interface>
+
+	<name>Get SNMP Interfaces</name>
+	<description>Queries a host for a list of monitorable interfaces</description>
+	<oid_index>iso.3.6.1.4.1.9.9.106.1.2.1.1</oid_index>
+	<oid_num_indexes>iso.3.6.1.4.1.9.9.106.1.2.1</oid_num_indexes>
+        <index_order>hsrpState:hsrpIP</index_order>
+
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+
+	<fields>
+
+
+
+                <hsrpState>
+                        <name>HSRP Status</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>iso.3.6.1.4.1.9.9.106.1.2.1.1.15.3</oid>
+                </hsrpState>
+
+                 <hsrpIP>
+                        <name>HSRP IP</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>iso.3.6.1.4.1.9.9.106.1.2.1.1.13.3.0</oid>
+                </hsrpIP>
+
+
+	</fields>
+</interface>
