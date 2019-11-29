@@ -1,0 +1,43 @@
+<interface>
+	<oid_index>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.1</oid_index>
+	<name>Get SNMP Interfaces</name>
+	<description>Queries a host for a list of monitorable interfaces</description>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+	<oid_num_indexes>.1.3.6.1.2.1.2.1.0</oid_num_indexes>
+	
+	<fields>
+	        
+		<rssi>
+                        <name>RSSI Values</name>
+                        <method>walk</method>
+                        <output_format>value</output_format>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.1</oid>
+			
+                
+		</rssi>
+		<mdmstate>
+    	                <name>Cellular Modem Status</name>
+                        <method>walk</method>
+                        <output_format>value</output_format>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.661.1.1.1.8</oid>
+				
+
+		</mdmstate>
+		<nettype>
+			<name>Cellular Network Band</name>
+                        <method>walk</method>
+                        <output_format>value</output_format>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.3</oid>
+
+		</nettype>
+    </fields>
+</interface>
+
+
