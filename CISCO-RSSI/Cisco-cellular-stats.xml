@@ -1,26 +1,23 @@
 <interface>
-        <name>Get Cisco Cellular Stats</name>
-        <description>Queriesa Cisco router for Cellular info</description>
-        <oid_index>.1.3.6.1.4.1.9.9.661.1.3.4.1.1</oid_index>
-        <index_title_format>|chosen_order_field|</index_title_format>
-        <index_order>ifIndex:rssi</index_order>
-
-        <fields>
-                <ifIndex>
-                        <name>Index</name>
-                        <method>walk</method>
-                        <source>value</source>
-                        <direction>input</direction>
-                        <oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1</oid>
-                </ifIndex>
-                <rssi>
-                        <name>RSSI-Value</name>
-                        <method>walk</method>
-                        <source>value</source>
-                        <direction>input-output</direction>
-                        <oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.1</oid>
-                </rssi>
-        </fields>
+	<name>Get Cisco Cellular Stats</name>
+	<description>Queriesa Cisco router for Cellular info</description>
+	<oid_index>.1.3.6.1.4.1.9.9.661.1.3.4.1.1</oid_index>
+	<index_title_format>|chosen_order_field|</index_title_format>
+	<index_order>ifIndex:rssi</index_order>
+	<fields>
+		<ifIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1</oid>
+		</ifIndex>
+		<rssi>
+			<name>RSSI-Value</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input-output</direction>
+			<oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.1</oid>
+		</rssi>
+	</fields>
 </interface>
-
-
