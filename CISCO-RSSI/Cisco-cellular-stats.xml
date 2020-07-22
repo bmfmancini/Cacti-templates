@@ -35,5 +35,21 @@
 			<direction>input-output</direction>
 			<oid>.1.3.6.1.4.1.9.9.661.1.3.4.1.1.3</oid>
 		</nettype>
+		<RSRP>
+                        <name>Cellular RSRP</name>
+                        <method>walk</method>
+                        <output_format>value</output_format>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.817.1.1.1.1.1.1</oid>
+                </RSRP>
+                <SNR>
+                        <name>Cellular SNR</name>
+                        <method>walk</method>
+                        <output_format>value</output_format>
+                        <source>value</source>
+                        <direction>input-output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.817.1.1.1.1.1.3</oid>
+                </SNR>
 	</fields>
 </interface>
