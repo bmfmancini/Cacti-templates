@@ -1,0 +1,51 @@
+<interface>
+        <name>Cisco ASR9k Memory statistics</name>
+        <script_path>|path_cacti|/scripts/asr9k_mem.php</script_path>
+        <script_function>getData</script_function>
+        <script_server>php</script_server>
+        <arg_prepend>|host_hostname| |host_snmp_community|</arg_prepend>
+        <arg_index>index</arg_index>
+	    <arg_query>query</arg_query>
+        <arg_get>get</arg_get>
+        <output_delimeter>!</output_delimeter>
+        <index_order>ifIndex</index_order>
+        <index_order_type>numeric</index_order_type>
+        <index_title_format>|chosen_order_field|</index_title_format>
+        <fields>
+                <ifIndex>
+                        <name>Index</name>
+                        <direction>input</direction>
+                        <query_name>index</query_name>
+                </ifIndex>
+				<ifName>
+                        <name>Memory Name</name>
+                        <direction>input</direction>
+                        <query_name>physName</query_name>
+                </ifName>
+                <ifDescr>
+                        <name>Description</name>
+                        <direction>input</direction>
+                        <query_name>physDescr</query_name>
+                </ifDescr>
+                <cempMemPoolHCUsedvalue>
+                        <name>Memory used value</name>
+                        <direction>input</direction>
+                        <query_name>HCUsed</query_name>
+                </cempMemPoolHCUsedvalue>
+                <cempMemPoolHCUsed>
+                        <name>Memory Used</name>
+                        <direction>output</direction>
+                        <query_name>HCUsed</query_name>
+                </cempMemPoolHCUsed>
+                <cempMemPoolHCFreevalue>
+                        <name>Memory free value</name>
+                        <direction>input</direction>
+                        <query_name>HCFree</query_name>
+                </cempMemPoolHCFreevalue>
+                <cempMemPoolHCFree>
+                        <name>Memory free</name>
+                        <direction>output</direction>
+                        <query_name>HCFree</query_name>
+                </cempMemPoolHCFree>
+        </fields>
+</interface>

@@ -1,0 +1,145 @@
+<interface>
+	<name>Get Juniper SNMP Interfaces</name>
+	<description>Queries a host for a list of monitorable interfaces</description>
+	<oid_index>.1.3.6.1.2.1.2.2.1.1</oid_index>
+	<oid_num_indexes>.1.3.6.1.2.1.2.1.0</oid_num_indexes>
+	<index_order>ifDescr:ifName:ifHwAddr:ifIndex</index_order>
+	<index_order_type>numeric</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+
+	<fields>
+		<ifIndex>
+			<name>Index</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.1</oid>
+		</ifIndex>
+		<ifOperStatus>
+			<name>Status</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.8</oid>
+		</ifOperStatus>
+		<ifDescr>
+			<name>Description</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.2</oid>
+		</ifDescr>
+		<ifName>
+			<name>Name (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.1</oid>
+		</ifName>
+		<ifAlias>
+			<name>Alias (IF-MIB)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.31.1.1.1.18</oid>
+		</ifAlias>
+		<ifType>
+			<name>Type</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.3</oid>
+		</ifType>
+		<ifSpeed>
+			<name>Speed</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.5</oid>
+		</ifSpeed>
+		<ifHwAddr>
+			<name>Hardware Address</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.2.2.1.6</oid>
+		</ifHwAddr>
+		<ifIP>
+			<name>IP Address</name>
+			<method>walk</method>
+			<source>OID/REGEXP:.*\.([0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3})$</source>
+			<direction>input</direction>
+			<oid>.1.3.6.1.2.1.4.20.1.2</oid>
+		</ifIP>
+		<ifIn1SecRate>
+			<name>Bits per second (bps) In (64bit)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.7</oid>
+		</ifIn1SecRate>
+		<ifOut1SecRate>
+			<name>Bits per second (bps) Out (64bit)</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.8</oid>
+		</ifOut1SecRate>
+		<ifIn1SecPkts>
+			<name>Packets per second (pps) In</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.3</oid>
+		</ifIn1SecPkts>
+		<ifOut1SecPkts>
+			<name>Packets per second (pps) Out</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.6</oid>
+		</ifOut1SecPkts>
+		<jnxDomCurrentModuleTemperature>
+			<name>Current Module Temperature</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.60.1.1.1.1.8</oid>
+		</jnxDomCurrentModuleTemperature>
+		<jnxDomCurrentRxLaserPower>
+			<name>Current Module RX Power</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.60.1.1.1.1.5</oid>
+		</jnxDomCurrentRxLaserPower>
+		<ifJnxInErrors>
+			<name>Total Errors In</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.9</oid>
+		</ifJnxInErrors>
+		<ifJnxOutErrors>
+			<name>Total Errors Out</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.3.1.1.24</oid>
+		</ifJnxOutErrors>
+		<jnxIpv6IfInOctets>
+			<name>Bits per second (bps) In - ipv6</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.11.1.3.1.1.1</oid>
+		</jnxIpv6IfInOctets>
+		<jnxIpv6IfOutOctets>
+			<name>Bits per second (bps) Out - ipv6</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.2636.3.11.1.3.1.1.2</oid>
+		</jnxIpv6IfOutOctets>
+	</fields>
+</interface>

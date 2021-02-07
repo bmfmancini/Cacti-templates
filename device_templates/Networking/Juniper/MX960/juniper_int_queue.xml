@@ -1,0 +1,80 @@
+<interface>
+	<name>Juniper Interfece COS queue packets/s</name>
+	<description>Querie for Juniper entries</description>
+	<script_path>perl |path_cacti|/scripts/juniper_int_queue.pl</script_path>
+	<arg_prepend>|host_hostname| |host_snmp_community|</arg_prepend>
+	<arg_index>index</arg_index>
+	<arg_query>query</arg_query>
+	<arg_get>get</arg_get>
+	<output_delimeter>!</output_delimeter>
+	<index_order>Index</index_order>
+	<index_order_type>alphabetic</index_order_type>
+	<index_title_format>|chosen_order_field|</index_title_format>
+	<fields>
+		<Index>
+			<name>Index</name>
+			<direction>input</direction>
+			<query_name>index</query_name>
+		</Index>
+		<desc>
+			<name>Description</name>
+			<direction>input</direction>
+			<query_name>desc</query_name>
+		</desc>
+		<ifname>
+			<name>ifName</name>
+			<direction>input</direction>
+			<query_name>ifname</query_name>
+		</ifname>
+		<ifalias>
+			<name>ifAlias</name>
+			<direction>input</direction>
+			<query_name>ifalias</query_name>
+		</ifalias>
+		<iftype>
+			<name>ifType</name>
+			<direction>input</direction>
+			<query_name>iftype</query_name>
+		</iftype>
+		<queue1>
+			<name>Packets at the output queue1</name>
+			<direction>output</direction>
+			<query_name>queue1</query_name>
+		</queue1>
+		<queue2>
+			<name>Packets at the output queue2</name>
+			<direction>output</direction>
+			<query_name>queue2</query_name>
+		</queue2>
+		<queue3>
+			<name>Packets at the output queue3</name>
+			<direction>output</direction>
+			<query_name>queue3</query_name>
+		</queue3>
+		<queue4>
+			<name>Packets at the output queue4</name>
+			<direction>output</direction>
+			<query_name>queue4</query_name>
+		</queue4>
+		<queue5>
+			<name>Packets at the output queue5</name>
+			<direction>output</direction>
+			<query_name>queue5</query_name>
+		</queue5>
+		<queue6>
+			<name>Packets at the output queue6</name>
+			<direction>output</direction>
+			<query_name>queue6</query_name>
+		</queue6>
+		<queue7>
+			<name>Packets at the output queue7</name>
+			<direction>output</direction>
+			<query_name>queue7</query_name>
+		</queue7>
+		<queue8>
+			<name>Packets at the output queue8</name>
+			<direction>output</direction>
+			<query_name>queue8</query_name>
+		</queue8>
+	</fields>
+</interface>

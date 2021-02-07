@@ -1,0 +1,28 @@
+<query>
+	<name>Cisco EIGRP interface statistics</name>
+	<oid_index>.1.3.6.1.4.1.9.9.449.1.5.1.1.3</oid_index>
+	<oid_index_parse>OID/REGEXP:.*\.([0-9]{1,5}\.[0-9]{1,5}[.][0-9]{1,10})$</oid_index_parse> 
+	<index_order>Index</index_order>
+	
+	<fields>
+		<Index>
+                        <name>EIGRP AS . Interface</name>
+                        <source>index</source>
+                        <direction>input</direction>
+		</Index>
+		 <cEigrpPeerCount>
+                        <name>NbrCount</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.9.9.449.1.5.1.1.3</oid>
+                </cEigrpPeerCount>
+		 <Peercount>
+                        <name>Number of Peers</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.9.9.449.1.5.1.1.3</oid>
+                </Peercount>
+	</fields>
+</query>

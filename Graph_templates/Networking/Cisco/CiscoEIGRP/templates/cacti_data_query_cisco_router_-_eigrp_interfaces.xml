@@ -1,0 +1,36 @@
+<cacti>	
+	<hash_0400244deca1d78b4519c204686359dbbd2e80>
+		<name>Cisco Router - EIGRP Interfaces</name>
+		<description></description>
+		<xml_path>&lt;path_cacti&gt;/resource/snmp_queries/cisco_eigrpint.xml</xml_path>
+		<data_input_id>hash_030024bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
+		<graphs>
+			<hash_110024ff1251f067d6d646507c449a1b12477a>
+				<name>Cisco Router - EIGRP Interfaces</name>
+				<graph_template_id>hash_000024b4881f5c5c6a76ef673aa61d69f3b0dd</graph_template_id>
+				<rrd>
+					<item_000>
+						<snmp_field_name>cEigrpPeerCount</snmp_field_name>
+						<data_template_id>hash_010024038157189e38ad2bc572e9e40ee9d788</data_template_id>
+						<data_template_rrd_id>hash_080024bf04f98bec145e29803b92a35b6a0b68</data_template_rrd_id>
+					</item_000>
+				</rrd>
+				<sv_graph>
+					<hash_120024ccd824fc28a0659b43bb6c54d791ead3>
+						<field_name>title</field_name>
+						<sequence>1</sequence>
+						<text>|host_description| - EIGRP - |query_index|</text>
+					</hash_120024ccd824fc28a0659b43bb6c54d791ead3>
+				</sv_graph>
+				<sv_data_source>
+					<hash_1300245b7e693b8ae7e2583e7229abe9fd4221>
+						<field_name>name</field_name>
+						<data_template_id>hash_010024038157189e38ad2bc572e9e40ee9d788</data_template_id>
+						<sequence>1</sequence>
+						<text>|host_description| - EIGRP - |query_index|</text>
+					</hash_1300245b7e693b8ae7e2583e7229abe9fd4221>
+				</sv_data_source>
+			</hash_110024ff1251f067d6d646507c449a1b12477a>
+		</graphs>
+	</hash_0400244deca1d78b4519c204686359dbbd2e80>
+</cacti>
