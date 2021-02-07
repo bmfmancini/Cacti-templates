@@ -9,5 +9,5 @@ If you have templates you would like to contribute let me know
 
 For all Cacti related support questions check out the cacti forums 
 
-cacti.net/forums or the cacti github page github.com/cacti
+[Cacti Forums](https://forums.cacti.net/) or the cacti github page [Cacti Github](https://github.com/Cacti)
 
