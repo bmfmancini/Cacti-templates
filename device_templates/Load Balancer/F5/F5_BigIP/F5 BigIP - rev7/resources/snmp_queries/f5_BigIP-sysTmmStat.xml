@@ -1,0 +1,82 @@
+<temperature>
+	<name>Get f5-BigIP sysTmmStat stats</name>
+	<index_order_type>numeric</index_order_type>
+	<oid_index>.1.3.6.1.4.1.3375.2.1.8.2.2</oid_index>  
+        <oid_index_parse>OID/REGEXP:^.{33}(.*)</oid_index_parse>
+        <index_order>sysTmmStatTmmId</index_order>
+        <index_order_type>alphabetic</index_order_type>
+
+	<fields>
+		<sysTmmStatTmmId>
+                        <name>TmmId</name>
+			<method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.1</oid>
+                </sysTmmStatTmmId>
+		<sysTmmStatTmmPid>
+                        <name>PID</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.2</oid>
+                </sysTmmStatTmmPid>
+		<sysTmmStatCpu>
+                        <name>CPU Index</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.3</oid>
+                </sysTmmStatCpu>
+		<sysTmmStatTmid>
+                        <name>TMM Index</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.4</oid>
+                </sysTmmStatTmid>
+		<sysTmmStatNpus>
+                        <name>number of TMMs</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.5</oid>
+                </sysTmmStatNpus>
+
+		<sysTmmStatTmTotalCycles>
+                        <name>total cycles spent in traffic management</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.28.3</oid>
+                </sysTmmStatTmTotalCycles>
+		<sysTmmStatTmIdleCycles>
+                        <name>cycles spent polling with no traffic</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.29.3</oid>
+                </sysTmmStatTmIdleCycles>
+		<sysTmmStatTmSleepCycles>
+                        <name>cycles yielded (uniprocessor only)</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.30.3</oid>
+                </sysTmmStatTmSleepCycles>
+		<sysTmmStatMemoryTotal>
+                        <name>total memory available in bytes for TMM</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.31.3</oid>
+                </sysTmmStatMemoryTotal>
+		<sysTmmStatMemoryUsed>
+                        <name>memory in use in bytes for TMM</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.8.2.3.1.32.3</oid>
+                </sysTmmStatMemoryUsed>
+	</fields>
+</temperature>

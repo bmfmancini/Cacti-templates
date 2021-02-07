@@ -1,0 +1,22 @@
+<temperature>
+	<name>Get f5-BigIP System Chassis Temp</name>
+	<index_order_type>numeric</index_order_type>
+	<oid_index>.1.3.6.1.4.1.3375.2.1.3.2.3.2.1.1</oid_index>
+        <oid_num_indexes>.1.3.6.1.4.1.3375.2.1.3.2.3.1.0</oid_num_indexes>	
+	<fields>
+		<ChassisTempIndex>
+                        <name>ChassisTempIndex</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.2.3.2.1.1</oid>
+                </ChassisTempIndex>
+		<ChassisTemperature>
+			<name>Temperature</name>
+			<method>walk</method>
+			<source>value</source>
+			<direction>output</direction>
+			<oid>.1.3.6.1.4.1.3375.2.1.3.2.3.2.1.2</oid>
+		</ChassisTemperature>
+	</fields>
+</temperature>

@@ -1,0 +1,43 @@
+<temperature>
+	<name>Get f5-BigIP sysCPU stats</name>
+	<index_order_type>numeric</index_order_type>
+	<oid_index>.1.3.6.1.4.1.3375.2.1.3.2.3.2.1.1</oid_index>        
+	<fields>
+		<sysCpuIndex>
+                        <name>Index</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.1</oid>
+                </sysCpuIndex>
+		<sysCpuName>
+                        <name>Name</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.4</oid>
+                </sysCpuName>
+		<sysCpuSlot>
+                        <name>Slot</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>input</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.5</oid>
+                </sysCpuSlot>
+
+		<sysCpuTemperature>
+                        <name>Temperature</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.2</oid>
+                </sysCpuTemperature>
+		<sysCpuFanSpeed>
+                        <name>Fan Speed</name>
+                        <method>walk</method>
+                        <source>value</source>
+                        <direction>output</direction>
+                        <oid>.1.3.6.1.4.1.3375.2.1.3.1.2.1.3</oid>
+                </sysCpuFanSpeed>
+	</fields>
+</temperature>
